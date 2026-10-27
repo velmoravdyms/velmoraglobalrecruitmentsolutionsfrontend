@@ -54,7 +54,7 @@ export default function CandidateForm() {
     if (files.passport) data.append('passport', files.passport);
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'}/v1/candidates/apply`, {
+      const res = await fetch(`${process.env.VELMORA_GLOBAL_BACKEND_API_URL || 'http://localhost:3000'}/v1/candidates/apply`, {
         method: 'POST',
         body: data,
       });
