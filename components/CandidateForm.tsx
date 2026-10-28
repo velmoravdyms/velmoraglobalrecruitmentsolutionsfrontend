@@ -53,6 +53,9 @@ export default function CandidateForm() {
     if (files.cv) data.append('cv', files.cv);
     if (files.passport) data.append('passport', files.passport);
 
+
+    console.log(process.env.VELMORA_GLOBAL_BACKEND_API_URL);
+    
     try {
       const res = await fetch(`${process.env.VELMORA_GLOBAL_BACKEND_API_URL || 'http://localhost:3000'}/v1/candidates/apply`, {
         method: 'POST',
