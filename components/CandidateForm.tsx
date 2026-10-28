@@ -55,10 +55,11 @@ export default function CandidateForm() {
 
 
     console.log(process.env.VELMORA_GLOBAL_BACKEND_API_URL);
-    
+
     try {
-      const res = await fetch(`${process.env.VELMORA_GLOBAL_BACKEND_API_URL || 'http://localhost:3000'}/v1/candidates/apply`, {
-        method: 'POST',
+      // const res = await fetch(`${process.env.VELMORA_GLOBAL_BACKEND_API_URL || 'http://localhost:3000'}/v1/candidates/apply`, {
+      const res = await fetch(`${process.env.VELMORA_GLOBAL_BACKEND_API_URL || 'https://velmoraglobalrecruitmentsolutionsbackend.onrender.com'}/v1/candidates/apply`, {
+       method: 'POST',
         body: data,
       });
 
