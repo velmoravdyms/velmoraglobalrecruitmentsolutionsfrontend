@@ -59,6 +59,8 @@ export default function CandidateForm() {
         body: data,
       });
 
+
+
       if (res.ok) {
         setStatus('success');
       } else {
