@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Velmora Global Recruitment",
-  description: "Velmora Global Recruitment Solutions",
+  title: "Velmora Global Recruitment Solutions",
+  description: "Velmora Global Recruitment Solutions Your go To place for Europe and Gulf Job Opportunities",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
